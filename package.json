@@ -16,7 +16,7 @@
     "es6",
     "modules",
     "dist",
-    "src/index.d.ts"
+    "src/index.js"
   ],
   "scripts": {
     "lint": "eslint ./src ./examples",
