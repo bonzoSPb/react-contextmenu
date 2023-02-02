@@ -84,8 +84,8 @@ var ContextMenuTrigger = function (_Component) {
             event.preventDefault();
             event.stopPropagation();
 
-            var x = event.clientX || event.touches && event.touches[0].pageX;
-            var y = event.clientY || event.touches && event.touches[0].pageY;
+            var x = event.clientX || event.touches && event.touches[0].clientX;
+            var y = event.clientY || event.touches && event.touches[0].clientY;
 
             if (_this.props.posX) {
                 x -= _this.props.posX;

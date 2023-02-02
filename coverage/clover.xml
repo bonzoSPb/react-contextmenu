@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1675376676555" clover="3.2.0">
-  <project timestamp="1675376676555" name="All files">
+<coverage generated="1675379020243" clover="3.2.0">
+  <project timestamp="1675379020243" name="All files">
     <metrics statements="304" coveredstatements="92" conditionals="231" coveredconditionals="48" methods="77" coveredmethods="29" elements="612" coveredelements="169" complexity="0" loc="304" ncloc="304" packages="1" files="7" classes="7">
       <file name="AbstractMenu.js" path="/Users/aleksandrkozlov/Desktop/react-contextmenu/src/AbstractMenu.js">
         <metrics statements="81" coveredstatements="16" conditionals="57" coveredconditionals="8" methods="14" coveredmethods="4"/>
