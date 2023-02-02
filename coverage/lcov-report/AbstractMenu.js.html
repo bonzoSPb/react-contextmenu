@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for AbstractMenu.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> AbstractMenu.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">19.05% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>16/84</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.04% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/57</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">28.57% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">19.75% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>16/81</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+&nbsp;
+import MenuItem from './MenuItem';
+&nbsp;
+export default class AbstractMenu extends Component {
+    static propTypes = {
+        children: PropTypes.node.isRequired
+    };
+&nbsp;
+    constructor(props) {
+        super(props);
+&nbsp;
+        this.seletedItemRef = null;
+        this.state = {
+            selectedItem: null,
+            forceSubMenuOpen: false
+        };
+    }
+&nbsp;
+    handleKeyNavigation = (e) =&gt; {
+        // check for isVisible strictly here as it might be undefined when this code executes in the context of SubMenu
+        // but we only need to check when it runs in the ContextMenu context
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (this.state.isVisible === false) {
+<span class="cstat-no" title="statement not covered" >            return;</span>
+        }
+&nbsp;
+        switch (e.keyCode) {
+<span class="branch-0 cbranch-no" title="branch not covered" >            case 37: </span>// left arrow
+            case 27: // escape
+                e.preventDefault();
+                this.hideMenu(e);
+                break;
+<span class="branch-2 cbranch-no" title="branch not covered" >            case 38: // up arrow</span>
+<span class="cstat-no" title="statement not covered" >                e.preventDefault();</span>
+<span class="cstat-no" title="statement not covered" >                this.selectChildren(true);</span>
+<span class="cstat-no" title="statement not covered" >                break;</span>
+<span class="branch-3 cbranch-no" title="branch not covered" >            case 40: // down arrow</span>
+<span class="cstat-no" title="statement not covered" >                e.preventDefault();</span>
+<span class="cstat-no" title="statement not covered" >                this.selectChildren(false);</span>
+<span class="cstat-no" title="statement not covered" >                break;</span>
+<span class="branch-4 cbranch-no" title="branch not covered" >            case 39: // right arrow</span>
+<span class="cstat-no" title="statement not covered" >                this.tryToOpenSubMenu(e);</span>
+<span class="cstat-no" title="statement not covered" >                break;</span>
+            case 13: // enter
+                e.preventDefault();
+                this.tryToOpenSubMenu(e);
+                {
+                    // determine the selected item is disabled or not
+                    const disabled = this.seletedItemRef &amp;&amp;
+<span class="branch-1 cbranch-no" title="branch not covered" >                        this.seletedItemRef.props </span>&amp;&amp;
+<span class="branch-2 cbranch-no" title="branch not covered" >                        this.seletedItemRef.props.disabled;</span>
+&nbsp;
+                    <span class="missing-if-branch" title="if path not taken" >I</span>if (this.seletedItemRef &amp;&amp;
+<span class="branch-1 cbranch-no" title="branch not covered" >                        this.seletedItemRef.ref instanceof HTMLElement </span>&amp;&amp;
+<span class="branch-2 cbranch-no" title="branch not covered" >                        !disabled)</span> {
+<span class="cstat-no" title="statement not covered" >                        this.seletedItemRef.ref.click();</span>
+                    } else {
+                        this.hideMenu(e);
+                    }
+                }
+                break;
+<span class="branch-6 cbranch-no" title="branch not covered" >            default:</span>
+                // do nothing
+        }
+    }
+&nbsp;
+    handleForceClose = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        this.setState({ forceSubMenuOpen: false });</span>
+    }
+&nbsp;
+    tryToOpenSubMenu = (e) =&gt; {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (this.state.selectedItem &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >this.state.selectedItem.type === this.getSubMenuType())</span> {
+<span class="cstat-no" title="statement not covered" >            e.preventDefault();</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({ forceSubMenuOpen: true });</span>
+        }
+    }
+&nbsp;
+    selectChildren = <span class="fstat-no" title="function not covered" >(f</span>orward) =&gt; {
+        const { selectedItem } = <span class="cstat-no" title="statement not covered" >this.state;</span>
+        const children = <span class="cstat-no" title="statement not covered" >[];</span>
+        let disabledChildrenCount = <span class="cstat-no" title="statement not covered" >0;</span>
+        let disabledChildIndexes = <span class="cstat-no" title="statement not covered" >{};</span>
+&nbsp;
+        const childCollector = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(c</span>hild, index) =&gt; {</span>
+            // child can be empty in case you do conditional rendering of components, in which
+            // case it should not be accounted for as a real child
+<span class="cstat-no" title="statement not covered" >            if (!child) {</span>
+<span class="cstat-no" title="statement not covered" >                return;</span>
+            }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            if ([MenuItem, this.getSubMenuType()].indexOf(child.type) &lt; 0) {</span>
+                // Maybe the MenuItem or SubMenu is capsuled in a wrapper div or something else
+<span class="cstat-no" title="statement not covered" >                React.Children.forEach(child.props.children, childCollector);</span>
+            } else <span class="cstat-no" title="statement not covered" >if (!child.props.divider) {</span>
+<span class="cstat-no" title="statement not covered" >                if (child.props.disabled) {</span>
+<span class="cstat-no" title="statement not covered" >                    ++disabledChildrenCount;</span>
+<span class="cstat-no" title="statement not covered" >                    disabledChildIndexes[index] = true;</span>
+                }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                children.push(child);</span>
+            }
+        };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        React.Children.forEach(this.props.children, childCollector);</span>
+<span class="cstat-no" title="statement not covered" >        if (disabledChildrenCount === children.length) {</span>
+            // All menu items are disabled, so none can be selected, don't do anything
+<span class="cstat-no" title="statement not covered" >            return;</span>
+        }
+&nbsp;
+        function <span class="fstat-no" title="function not covered" >findNextEnabledChildIndex(</span>currentIndex) {
+            let i = <span class="cstat-no" title="statement not covered" >currentIndex;</span>
+            let incrementCounter = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                if (forward) {</span>
+<span class="cstat-no" title="statement not covered" >                    --i;</span>
+                } else {
+<span class="cstat-no" title="statement not covered" >                    ++i;</span>
+                }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                if (i &lt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >                    i = children.length - 1;</span>
+                } else <span class="cstat-no" title="statement not covered" >if (i &gt;= children.length) {</span>
+<span class="cstat-no" title="statement not covered" >                    i = 0;</span>
+                }
+            };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            do {</span>
+<span class="cstat-no" title="statement not covered" >                incrementCounter();</span>
+            } while (i !== currentIndex &amp;&amp; disabledChildIndexes[i]);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            return i === currentIndex ? null : i;</span>
+        }
+&nbsp;
+        const currentIndex = <span class="cstat-no" title="statement not covered" >children.indexOf(selectedItem);</span>
+        const nextEnabledChildIndex = <span class="cstat-no" title="statement not covered" >findNextEnabledChildIndex(currentIndex);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (nextEnabledChildIndex !== null) {</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({</span>
+                selectedItem: children[nextEnabledChildIndex],
+                forceSubMenuOpen: false
+            });
+        }
+    }
+&nbsp;
+    onChildMouseMove = <span class="fstat-no" title="function not covered" >(c</span>hild) =&gt; {
+<span class="cstat-no" title="statement not covered" >        if (this.state.selectedItem !== child) {</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({ selectedItem: child, forceSubMenuOpen: false });</span>
+        }
+    }
+&nbsp;
+    onChildMouseLeave = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        this.setState({ selectedItem: null, forceSubMenuOpen: false });</span>
+    }
+&nbsp;
+    renderChildren = children =&gt; React.Children.map(children, <span class="fstat-no" title="function not covered" >(c</span>hild) =&gt; {
+        const props = <span class="cstat-no" title="statement not covered" >{};</span>
+<span class="cstat-no" title="statement not covered" >        if (!React.isValidElement(child)) <span class="cstat-no" title="statement not covered" >return child;</span></span>
+<span class="cstat-no" title="statement not covered" >        if ([MenuItem, this.getSubMenuType()].indexOf(child.type) &lt; 0) {</span>
+            // Maybe the MenuItem or SubMenu is capsuled in a wrapper div or something else
+<span class="cstat-no" title="statement not covered" >            props.children = this.renderChildren(child.props.children);</span>
+<span class="cstat-no" title="statement not covered" >            return React.cloneElement(child, props);</span>
+        }
+<span class="cstat-no" title="statement not covered" >        props.onMouseLeave = this.onChildMouseLeave.bind(this);</span>
+<span class="cstat-no" title="statement not covered" >        if (child.type === this.getSubMenuType()) {</span>
+            // special props for SubMenu only
+<span class="cstat-no" title="statement not covered" >            props.forceOpen = this.state.forceSubMenuOpen &amp;&amp; (this.state.selectedItem === child);</span>
+<span class="cstat-no" title="statement not covered" >            props.forceClose = this.handleForceClose;</span>
+<span class="cstat-no" title="statement not covered" >            props.parentKeyNavigationHandler = this.handleKeyNavigation;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        if (!child.props.divider &amp;&amp; this.state.selectedItem === child) {</span>
+            // special props for selected item only
+<span class="cstat-no" title="statement not covered" >            props.selected = true;</span>
+<span class="cstat-no" title="statement not covered" >            props.ref = <span class="fstat-no" title="function not covered" >(r</span>ef) =&gt; { <span class="cstat-no" title="statement not covered" >this.seletedItemRef = ref; </span>};</span>
+<span class="cstat-no" title="statement not covered" >            return React.cloneElement(child, props);</span>
+        }
+        // onMouseMove is only needed for non selected items
+<span class="cstat-no" title="statement not covered" >        props.onMouseMove = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.onChildMouseMove(child);</span></span>
+<span class="cstat-no" title="statement not covered" >        return React.cloneElement(child, props);</span>
+    });
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 03 2023 01:24:36 GMT+0300 (Moscow Standard Time)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
